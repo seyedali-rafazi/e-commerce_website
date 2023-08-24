@@ -1,0 +1,393 @@
+/*--------------------------- NAVBAR ------------------------*/
+
+header{
+    font-size: 1em;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    font-size: 1em;
+}
+
+header nav .nav-right{
+    display: flex;
+    align-items: center;
+}
+
+header nav .nav-right a{
+    color: #444;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 1.1rem;
+    
+}
+
+header nav .nav-right a:hover{
+    color: #f39c12;
+
+}
+
+header nav .nav-left .register-login-button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+    
+}
+
+header nav .nav-left .register-login-button i{
+   margin-left: 10px;
+}
+
+header nav .nav-left .register-login-button a{
+   
+}
+
+header nav .nav-left .register-login-button a:hover{
+    background-color: #f39c12;
+    color: #fff;
+    
+}
+
+
+
+/*--------------------------- SLIDER ------------------------*/
+
+.slider{
+    position: relative;
+    font-size: 1em;
+}
+
+.slider .slides{
+
+}
+
+.slider .slides .item{
+    position: relative;
+    display: none;
+}
+
+.slider .slides .item img{
+    width: 100%;
+    height: 50%;
+}
+
+.slider .slides .item span{
+    position: absolute;
+    left: 4%;
+    bottom: 45%;
+    z-index: 1;
+    font-size: 1.8rem;
+    color: #222;
+}
+
+
+.slider .slides .active{
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 4s ;
+
+}
+
+.slider .buttons{
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+    z-index: 1;
+}
+
+.slider .buttons i{
+    color: rgba(255, 255, 255, .4);
+    cursor: pointer;
+}
+
+.slider .buttons i:hover{
+    color: white;
+   
+}
+
+/*--------------------------- CARDS ------------------------*/
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.cards .card {
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    border: 2px solid rgb(233, 233, 233);
+    border-radius: 10px;
+    margin-top: 20%;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease; 
+}
+
+.cards .card:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+.cards .card img{
+    width: 100%;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    overflow: hidden;
+}
+
+.cards .card .stars{
+    position: absolute;
+    left: 4%;
+    top: 5%;
+    z-index: 1;
+    color: #f39c12;
+
+}
+
+.cards .card .offer{
+    position: absolute;
+    right: 4%;
+    top: 5%;
+    z-index: 1;
+    color: white;
+    background-color: #f39c12;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+
+.cards .card .offer p{
+    margin: 0;
+}
+
+.cards .card h5{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cards .card .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards .card .row span{
+    margin: 10px 30px 10px auto;
+}
+
+.cards .card .row .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.cards .card .row .buttons i{
+    background-color: #f39c12;
+    padding: 7px;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+.cards .card .row .buttons i:hover{
+    background-color: white;
+    padding: 7px;
+    color: #f39c12;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+/*--------------------------- POSTERS ------------------------*/
+
+.posters {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 40px;
+}
+
+.posters .poster-offer {
+    border: 2px solid rgb(233, 233, 233);
+    border-radius: 10px;
+}
+
+.posters .poster-offer:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.posters .poster-offer h5{
+    text-align: center;
+    background-color: #f39c12;
+    color: white;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.posters .poster-offer .poster-offer-elements{
+    display: flex;
+    flex-direction: row;
+}
+
+.posters .poster-offer .poster-offer-elements img{
+    width: 60%;
+}
+
+.posters .poster-offer .poster-offer-elements .poster-offer-element{
+
+}
+
+.posters .poster-offer .poster-offer-elements .poster-offer-element .poster-offer-element-pc{
+    border-bottom: 2px solid rgb(233, 233, 233);
+}
+
+.posters .poster-offer .poster-offer-elements .poster-offer-element .poster-offer-element-pc div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.posters .poster-offer .poster-offer-elements .poster-offer-element .poster-offer-element-pc div span{
+}
+
+.posters .poster-offer .poster-offer-elements .poster-offer-element .poster-offer-element-pc div h6{
+    font-size: 80%;
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.posters .poster-offer .poster-offer-elements .poster-offer-element .poster-offer-element-pc h4{
+    text-align: center;
+    margin-top: 0;
+}
+
+.posters .poster-offer .poster-offer-elements .poster-offer-element .poster-offer-element-timer{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.posters .poster-offer .poster-offer-elements .poster-offer-element .poster-offer-element-timer span{
+    font-size: 1.4rem;
+
+}
+
+.posters .poster-offer .poster-offer-elements .poster-offer-element .poster-offer-element-timer p{
+    font-size: .7rem;
+}
+
+
+
+.posters .poster-discount {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.posters .poster-discount img{
+width: 100%;
+background-color: #ffd187;
+padding: 10px;
+border-radius: 10px;
+}
+
+/*---------------------------   DRAGBLE CARDS ------------------------*/
+
+.owl-stage-outer {
+    direction: ltr;
+}
+
+/*---------------------------  footer ------------------------*/
+
+footer{
+}
+
+footer .footer-home{
+    margin-top: 30px;
+}
+
+footer .footer-home .upper-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc569;
+    padding: 20px;
+}
+
+footer .footer-home .upper-footer .upper-right-footer{
+    flex: 2;
+    padding: 20px 30px;
+}
+
+footer .footer-home .upper-footer .upper-right-footer h4{
+    color: white;
+    border-bottom: 1px solid #f39c12;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+footer .footer-home .upper-footer .upper-right-footer p{
+    color: white;
+    font-size: .8rem;
+
+}
+
+footer .footer-home .upper-footer .upper-left-footer{
+    flex: 1;
+    padding: 20px;
+}
+
+footer .footer-home .upper-footer .upper-left-footer p{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+
+footer .footer-home .upper-footer .upper-left-footer .socialmedia-icon{
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
+
+footer .footer-home .upper-footer .upper-left-footer .socialmedia-icon i{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s; 
+}
+
+footer .footer-home .upper-footer .upper-left-footer .socialmedia-icon i:hover{
+    transform: translateY(-10px); 
+}
+
+footer .footer-home .down-footer{
+    background-color: #f9ac31;
+}
+
+footer .footer-home .down-footer p{
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    color:white;
+
+}

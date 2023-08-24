@@ -1,0 +1,123 @@
+main {
+    font-size: 1rem;
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(90, 92, 106, 1) 0%, rgba(32, 45, 58, 1) 81.3%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .login-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .login-main .login-rtl {
+    flex: 1;
+    margin: 10px;
+    font-size: 0.8em;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px 35px;
+    color: white;
+  }
+  
+  .login-main .login-rtl .rtl-upper {
+    padding: 30px;
+  }
+  
+  .login-main .login-rtl .rtl-upper .form-login {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-main .login-rtl .rtl-upper .form-login span {
+    margin: 20px 0;
+  }
+  
+  .login-main .login-rtl .rtl-upper .form-login input {
+    border: 2px solid white;
+    border-radius: 20px;
+    background: none;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    outline: none;
+    transition: border 0.5s ease; /* Add transition property */
+
+  }
+  
+  .login-main .login-rtl .rtl-upper .form-login input:focus {
+    border: 2px solid #f39c12;
+  }
+  
+  .login-main .login-rtl .rtl-upper p {
+    margin: 25px 0;
+  }
+  
+  .login-main .login-rtl .rtl-upper p span {
+    color: #f39c12;
+    cursor: pointer;
+  }
+  
+  .login-main .login-rtl .rtl-upper button {
+    margin: auto;
+    padding: 10px 25px;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    background-color: #f39c12;
+  }
+  
+  .login-main .login-rtl .icon-login {
+    border-top: 2px solid rgb(160, 160, 160);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    font-size: 2rem;
+    width: 100%;
+  }
+  
+  .login-main .login-rtl .icon-login i {
+    margin-left: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Add transition property */
+
+  }
+
+  .login-main .login-rtl .icon-login i:hover {
+    color: #f39c12;
+
+  }
+  
+
+.login-main .login-lef {
+    flex: 1;
+    min-width: 200px; /* Adjust this value as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-main .login-lef img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  @media screen and (max-width: 1000px) {
+    .login-main .login-rtl {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
